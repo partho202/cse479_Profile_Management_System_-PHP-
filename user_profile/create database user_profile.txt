@@ -1,0 +1,11 @@
+CREATE DATABASE user_profile;
+
+USE user_profile;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    photo VARCHAR(255),
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
